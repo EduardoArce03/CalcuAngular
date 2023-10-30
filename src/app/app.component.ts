@@ -6,5 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'PrimeraApp';
+  title = 'Calculadora';
+  resultado: string = '';
+
+  boton(value: string) {
+    if (value === '/') {
+      this.resultado += ' / ';
+    } else {
+      this.resultado += value;
+    }
+  }
+  
+
+  limpiar() {
+    this.resultado = '';
+  }
+
+  calcular() {
+      this.resultado = eval(this.resultado);
+  }
+  
 }
