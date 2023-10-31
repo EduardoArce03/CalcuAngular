@@ -1,73 +1,8 @@
-<h1>{{title}}</h1>
+<h1>EduWeb</h1>
 
-<div class="calculator">
-  <input [(ngModel)]="resultado" [readonly]="true" />
-  <div class="buttons">
-    <button (click)="boton('1')">1</button>
-    <button (click)="boton('2')">2</button>
-    <button (click)="boton('3')">3</button>
-    <button (click)="boton('+')">+</button>
-    <button (click)="boton('4')">4</button>
-    <button (click)="boton('5')">5</button>
-    <button (click)="boton('6')">6</button>
-    <button (click)="boton('-')">-</button>
-    <button (click)="boton('7')">7</button>
-    <button (click)="boton('8')">8</button>
-    <button (click)="boton('9')">9</button>
-    <button (click)="boton('*')">*</button>
-    <button (click)="limpiar()">C</button>
-    <button (click)="boton('0')">0</button>
-    <button (click)="calcular()">=</button>
-    <button (click)="boton('/')">/</button>
-  </div>
-</div>
-
-<style>
-    .calculator {
-  width: 300px;
-  margin: 0 auto;
-  border: 2px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-input {
-  width: 100%;
-  font-size: 24px;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
-}
-
-button {
-  padding: 10px;
-  font-size: 18px;
-  background-color: #bb9d66;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0f0f0f;
-}
-
-button:active {
-  background-color: #bb9d66;
-}
-
-</style>
+<app-menu></app-menu>
 
 <router-outlet></router-outlet>
+
 
 

@@ -1,0 +1,38 @@
+
+
+label{
+    font-weight: bold;
+    padding-right: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+
+}
+
+input{
+    
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 1.0);
+}
+
+button{
+    padding: 12px;
+    background-color: rgb(106, 196, 212);
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    
+
+}
+
+button:hover{
+    background-color: rgb(140, 172, 231);
+}
+
+form{
+    padding-bottom: 20px;
+}

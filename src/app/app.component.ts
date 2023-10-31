@@ -7,23 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Calculadora';
-  resultado: string = '';
-
-  boton(value: string) {
-    if (value === '/') {
-      this.resultado += ' / ';
-    } else {
-      this.resultado += value;
-    }
-  }
   
-
-  limpiar() {
-    this.resultado = '';
-  }
-
-  calcular() {
-      this.resultado = eval(this.resultado);
-  }
   
 }
